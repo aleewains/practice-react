@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Practice React</h1>
+        <h1>Practice React by Ali</h1>
         <h2>Counter Value: {value}</h2>
         <button onClick={addValue}>Add Value</button>
         <br />
