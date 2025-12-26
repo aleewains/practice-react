@@ -1,23 +1,15 @@
-import { useState } from "react";
 import "./App.css";
+import Card from "./components/card";
+// let myObj = {
+//   name: "Sofia",
+//   age: 32,
+// };
+// let myArr = [1, 2, 3];
 function App() {
-  const [value, setvalue] = useState(0);
-
-  const addValue = () => {
-    if (value < 5) setvalue(value + 1);
-  };
-  const removeValue = () => {
-    if (value > 0) setvalue(value - 1);
-  };
   return (
     <>
-      <div>
-        <h1>Practice React by Ali</h1>
-        <h2>Counter Value: {value}</h2>
-        <button onClick={addValue}>Add Value</button>
-        <br />
-        <button onClick={removeValue}>Remove Value</button>
-      </div>
+      <Card name="Ali" btnText="Hire me" />
+      <Card name="Ahmaed" />
     </>
   );
 }
