@@ -1,5 +1,6 @@
 import "./App.css";
-import Card from "./components/card";
+import BgChanger from "./bgChanger";
+// import Card from "./components/card";
 // let myObj = {
 //   name: "Sofia",
 //   age: 32,
@@ -8,8 +9,11 @@ import Card from "./components/card";
 function App() {
   return (
     <>
-      <Card name="Ali" btnText="Hire me" />
-      <Card name="Ahmaed" />
+      <div className="flex flex-wrap md:min-w-max gap-1 ">
+        {/* <Card name="Ali" btnText="Hire me" />
+        <Card name="Ahmaed" /> */}
+        <BgChanger />
+      </div>
     </>
   );
 }
