@@ -11,6 +11,7 @@ export default function BgChanger() {
     | "white"
     | "black";
   const [color, setColor] = useState<Color>("black");
+  const isBgLight: boolean = color === "white" || color === "lavender";
   const colors: Color[] = [
     "red",
     "blue",
@@ -27,6 +28,14 @@ export default function BgChanger() {
         className="w-full h-screen duration-200"
         style={{ backgroundColor: color }}
       >
+        <div>
+          <h1
+            className="font-bold text-2xl p-2"
+            style={{ color: isBgLight ? "black" : "white" }}
+          >
+            Simple background Color Changer
+          </h1>
+        </div>
         <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
           <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
             {colors.map((c: Color) => {
